@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="origin" fetch="ssh://git@github.com/zylinux" />
-  <default revision="main" remote="origin" />
-
-  <project path="test_app"
-           name="test_app" remote="origin" />
-
-  <project path="test_kernel"
-           name="test_kernel" remote="origin" />
-
+  <remote name="origin" fetch="ssh://git@github.com/zylinux"/>
+  
+  <default remote="origin" revision="main"/>
+  
+  <project name="test_app" revision="8c22451799e1444b03e169ec8305d77c9e3cd77b" upstream="main" dest-branch="main"/>
+  <project name="test_kernel" revision="466c9e18cc2f3e4642f97e40428986b26ddf0a08" upstream="main" dest-branch="main"/>
 </manifest>
